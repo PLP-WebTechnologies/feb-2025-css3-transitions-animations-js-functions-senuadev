@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Simon Mwangi</h1>
+    <p>Web Developer | Python Developer | Software Engineer</p>
+  </header>
+
+  <div class="content">
+    <h2>Projects</h2>
+
+    <div class="project" id="project1">
+      <h3>Personal Blog</h3>
+      <p>A responsive blog built with HTML, CSS, and JavaScript.</p>
+    </div>
+
+    <div class="project" id="project2">
+      <h3>Task Manager App</h3>
+      <p>A to-do app with dark mode and persistent tasks using localStorage.</p>
+    </div>
+
+    <button id="animateBtn" onclick="animateProjects()">Animate Projects</button>
+
+    <div id="themePicker">
+      <label for="colorInput">Choose Theme Color: </label>
+      <input type="color" id="colorInput">
+      <button id="themeSaveBtn" class="theme-button" onclick="saveTheme()">🎨 Save Theme</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Simon Mwangi. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

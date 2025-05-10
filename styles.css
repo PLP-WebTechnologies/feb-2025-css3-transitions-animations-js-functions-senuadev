@@ -1,0 +1,104 @@
+:root {
+  --main-color: #3498db;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  transition: background-color 0.5s ease;
+}
+
+header {
+  background-color: var(--main-color);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.content {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.project {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid var(--main-color);
+  transition: transform 0.5s ease;
+}
+
+.project:hover {
+  transform: scale(1.02);
+}
+
+#animateBtn {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background: var(--main-color);
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+#animateBtn:hover {
+  background: #2c80b4;
+}
+
+.pulse {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #999;
+}
+
+#themePicker {
+  margin-top: 20px;
+}
+
+.theme-button {
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-left: 10px;
+}
+
+.theme-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #ff6b6b);
+  animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
